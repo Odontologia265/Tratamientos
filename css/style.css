@@ -6,7 +6,7 @@ body {
     padding: 0;
 }
 
-/* Estilo del encabezado */
+
 header {
     display: flex;
     align-items: center;
@@ -36,7 +36,7 @@ header img {
     font-weight: normal;
 }
 
-/* Contenedor de servicios */
+
 .services {
     padding: 20px;
     background-color: #ffffff;
@@ -47,7 +47,7 @@ header img {
 
 .treatments h2 {
     color: #01579B;
-    font-size: 26px; /* Aumentar tamaño del título */
+    font-size: 26px; 
     font-weight: bold;
     border-bottom: 3px solid #01579B;
     padding-bottom: 12px;
@@ -63,7 +63,7 @@ header img {
 }
 
 .treatments li {
-    font-size: 20px; /* Aumentar tamaño de la lista */
+    font-size: 20px; 
     padding: 12px 0;
     display: flex;
     align-items: center;
@@ -73,15 +73,15 @@ header img {
 }
 
 .treatments li::before {
-    content: "✔"; /* Añadir icono antes de cada elemento */
+    content: "✔"; 
     color: #01579B;
     font-size: 22px;
     margin-right: 10px;
 }
 
 .treatments li:hover {
-    background-color: #B3E5FC; /* Cambio de color al hacer hover */
-    transform: translateX(5px); /* Efecto de desplazamiento */
+    background-color: #B3E5FC; 
+    transform: translateX(5px); 
     cursor: pointer;
 }
 
@@ -89,14 +89,12 @@ header img {
     border-bottom: none;
 }
 
-/* Contenedor de información adicional */
+
 .extra-info {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
 }
-
-/* Diagnóstico con imagen */
 .diagnostic, .prices {
     display: flex;
     align-items: center;
@@ -104,7 +102,7 @@ header img {
     padding: 5px;
     border-radius: 20px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    width: 48%; /* Para que ambos elementos ocupen el mismo espacio */
+    width: 48%; 
 }
 
 .diagnostic img, .prices img {
@@ -117,14 +115,14 @@ header img {
     color: #01579B;
 }
 
-/* Ajuste para pantallas pequeñas (responsivo) */
+
 @media (max-width: 768px) {
     .extra-info {
         flex-direction: column;
     }
 
     .diagnostic, .prices {
-        width: 100%; /* Para que se coloquen en columna en pantallas pequeñas */
+        width: 100%; 
         margin-bottom: 10px;
     }
 }
@@ -145,14 +143,14 @@ header img {
     gap: 20px;
 }
 
-/* Estilo de los íconos (imágenes PNG) */
+
 .icono {
-    width: 30px; /* Ajusta el tamaño del ícono */
-    height: 30px; /* Ajusta el tamaño del ícono */
-    margin-right: 15px; /* Espacio entre el ícono y el texto */
+    width: 30px; 
+    height: 30px;
+    margin-right: 15px;
 }
 
-/* Información de contacto */
+
 .contacto, .direccion {
     display: flex;
     align-items: center;
@@ -160,22 +158,22 @@ header img {
     justify-content: flex-start;
 }
 
-/* Información de contacto y dirección */
+
 .phone-info p, .address-info p {
     font-size: 18px;
     color: #01579B;
     margin: 3px 0;
 }
 
-/* Ajustes para pantallas más pequeñas */
+
 @media (max-width: 768px) {
     .contactos {
         padding: 15px;
     }
 
     .contacto, .direccion {
-        flex-direction: row; /* Alinea los íconos y texto en fila (horizontal) */
-        align-items: center; /* Centra los íconos y textos en la misma línea */
+        flex-direction: row; 
+        align-items: center;
     }
 
     .phone-info, .address-info {
@@ -183,19 +181,19 @@ header img {
     }
 
     .icono {
-        width: 25px; /* Ajusta el tamaño de los íconos en pantallas pequeñas */
+        width: 25px; 
         height: 25px;
     }
 }
 
 @media (max-width: 480px) {
     .contacto, .direccion {
-        flex-direction: column; /* Para pantallas aún más pequeñas, los elementos se apilan */
+        flex-direction: column;
         align-items: flex-start;
     }
 
     .icono {
-        margin-bottom: 10px; /* Agrega espacio entre el ícono y el texto en pantallas muy pequeñas */
+        margin-bottom: 10px; 
     }
 
     .phone-info p, .address-info p {
